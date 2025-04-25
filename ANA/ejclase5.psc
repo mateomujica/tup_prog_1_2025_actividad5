@@ -1,4 +1,4 @@
-Algoritmo sin_titulo
+Algoritmo AnaListaSuper
 	
 	Definir prod, lineas, aceptados, rechazados como Entero;
 	Definir kcal,carbo,grasas,fibra,sodio,porccarbo,porcgrasa,porcfibra,porcsodio como Real;
@@ -30,7 +30,7 @@ Algoritmo sin_titulo
 					SiNo
 						bandera=Falso;
 					FinSi
-				2:Escribir "Ingrese carbos";
+				2:Escribir "Ingrese cant de carbohidratos";
 					Leer carbo;
 					porccarbo=trunc(carbo/100*100);
 					Si porccarbo>=0 y porccarbo<=15 Entonces
@@ -38,7 +38,7 @@ Algoritmo sin_titulo
 					SiNo 
 						bandera=Falso;
 					FinSi
-				3:Escribir "Ingrese grasas";
+				3:Escribir "Ingrese cant grasas";
 					Leer grasas;
 					porcgrasa=trunc(grasas/100*100);
 					Si grasas>=1 y grasas<=13 Entonces
@@ -46,7 +46,7 @@ Algoritmo sin_titulo
 					SiNo 
 						bandera=Falso;
 					FinSi
-				4: Escribir "Ingrese fibra";
+				4: Escribir "Ingrese cant de fibra";
 					Leer fibra;
 					porcfibra=trunc(fibra/100*100);
 					Si fibra>=0 y fibra<=15 Entonces
@@ -55,7 +55,7 @@ Algoritmo sin_titulo
 						bandera=Falso;
 					FinSi
 				De Otro Modo:
-					Escribir "Ingrese sodio";					
+					Escribir "Ingrese cant de sodio";					
 					leer sodio; 
 					porcfibra=trunc(fibra/100*100);
 					Si sodio>=0 o sodio<=2 Entonces
@@ -70,7 +70,7 @@ Algoritmo sin_titulo
 				rechazados=rechazados+1;
 			FinSi
 			
-			Si lineas == 5 Entonces
+			Si lineas=5 Entonces
 				bandera=Falso;
 			FinSi
 			
